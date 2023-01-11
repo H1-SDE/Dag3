@@ -12,7 +12,8 @@ namespace Dag3
         {
             // Console.WriteLine(String.Join(", ", SieveOfEratosthenes(30)));
             //Console.WriteLine(ToThePowerOf(5, 5));
-            Console.WriteLine(SumAndAverage(-10, 0));
+            //Console.WriteLine(SumAndAverage(-10, 0));
+            Console.WriteLine(FullSequenceOfLetters('m', 'b'));
             Console.Read();
         }
 
@@ -61,6 +62,31 @@ namespace Dag3
             double avg = arr2.Average();
 
             return "Sum: " + Convert.ToString(sum) + ", Average: " + Convert.ToString(avg);
+        }
+
+        public static string FullSequenceOfLetters(char a, char b)
+        {
+            char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
+            
+
+            string[] res = { };
+            var res2 = res.ToList();
+
+            int add = 0;
+
+            foreach (char e in alphabet)
+            {
+                if (e == a || e == b) {
+                    add += 1; 
+                    if (add == 2) {
+                        res2.Add(Convert.ToString(e)); 
+                    }
+                }
+                if (add == 1) { res2.Add(Convert.ToString(e)); }
+            }
+
+            return String.Join(" ", res2);
         }
     }
 }
