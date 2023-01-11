@@ -11,7 +11,8 @@ namespace Dag3
         static void Main(string[] args)
         {
             // Console.WriteLine(String.Join(", ", SieveOfEratosthenes(30)));
-            Console.WriteLine(ToThePowerOf(2, 7));
+            //Console.WriteLine(ToThePowerOf(5, 5));
+            Console.WriteLine(SumAndAverage(-10, 0));
             Console.Read();
         }
 
@@ -29,6 +30,7 @@ namespace Dag3
 
             res = tempRes.ToArray();
         return res;
+
         }
 
         public static double ToThePowerOf(int a, int b)
@@ -41,6 +43,24 @@ namespace Dag3
             }
 
             return c;
+        }
+
+        public static string SumAndAverage(int a, int b)
+        {
+            if (!(a <= b)) { (a, b) = (b, a); }
+
+            int[] arr = { };
+            var arr2 = arr.ToList();
+
+            for (int i = a; i < b+1; i++)
+            {
+                arr2.Add(i);
+            }
+
+            int sum = arr2.Sum();
+            double avg = arr2.Average();
+
+            return "Sum: " + Convert.ToString(sum) + ", Average: " + Convert.ToString(avg);
         }
     }
 }
