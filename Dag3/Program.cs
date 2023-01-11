@@ -12,6 +12,11 @@ namespace Dag3
         {
             for(int j = 1; j <=10 ; j = j + 1) {
             
+        }
+        public static string MultiplicationTable()
+        {
+            for (int j = 10; j <= 10; j = j + 1)
+            {
             
             String text = "";
 
@@ -21,13 +26,11 @@ namespace Dag3
 
 
 
-
-
             } 
-            Console.WriteLine(text);
 
             }
         }
         
     }
+}
 }
