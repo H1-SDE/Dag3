@@ -10,7 +10,8 @@ namespace Dag3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(String.Join(", ", SieveOfEratosthenes(100)));
+            // Console.WriteLine(String.Join(", ", SieveOfEratosthenes(30)));
+            Console.WriteLine(ToThePowerOf(2, 7));
             Console.Read();
         }
 
@@ -28,6 +29,18 @@ namespace Dag3
 
             res = tempRes.ToArray();
         return res;
+        }
+
+        public static double ToThePowerOf(int a, int b)
+        {
+            double c = a;
+
+            for (int i = 1; i < b; i++)
+            {
+                c *= Convert.ToDouble(a);
+            }
+
+            return c;
         }
     }
 }
