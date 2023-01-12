@@ -10,6 +10,48 @@ namespace Dag3
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
+            for(int j = 1; j <=10 ; j = j + 1) {
+            
+            
+            String text = "";
+            
+            Console.ReadLine();
+        }
+
+        static string Stars(string stars)
+        {
+            string stars = "         *";
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(stars);
+                stars = stars.Remove(0, 1);
+                stars += "**";
+                return stars;
+            }
+        }
+
+        static string multiTabel (string test)
+        {
+            for (int j = 1; j <= 10; j = j + 1)
+            {
+
+
+                String text = "";
+
+                for (int i = 1; i <= 10; i = i + 1)
+                {
+                    text = text + i * j + " ";
+
+
+
+
+
+            } 
+            Console.WriteLine(text);
+
+            }
+=======
             //Console.WriteLine(theBiggestNumber(new int[] { 12, 23, 193, 1312 }));
             //Console.WriteLine(threeIncreasingAdjacent(new int[] { 1, 4, 1, 1, 4, 3, 4, 5, 6, 7, 5, 4, 9 }));
             Console.WriteLine(extractString("##abc##def"));  // 123456789
@@ -134,6 +176,13 @@ namespace Dag3
                 return "empty string";
             }
             return word.Substring(firstWord, secondWord - 2);
+>>>>>>> main
+                }
+                Console.WriteLine(text);
+            }
+            return test;
         }
     }
 }
+  
+    
