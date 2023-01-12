@@ -10,27 +10,14 @@ namespace Dag3
     {
         static void Main(string[] args)
         {
-            for(int j = 1; j <=10 ; j = j + 1) {
-            
-        }
-        public static string MultiplicationTable()
-        {
-            for (int j = 10; j <= 10; j = j + 1)
+            string stars = "         *";
+            for (int i = 0; i <10; i++)
             {
-            
-            String text = "";
-
-            for (int i = 1; i <= 10; i = i + 1)
-            {
-                text = text + i * j + " ";
-
-
-
-            } 
-
+                Console.WriteLine(stars);
+                stars = stars.Remove(0, 1);
+                stars += "**";
             }
+            Console.ReadLine();
         }
-        
     }
-}
 }
